@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Check emojis in Markdown files
       uses: alaeddineth/check-emojis-action@v1
