@@ -1,0 +1,17 @@
+name: Emoji Check
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-emojis:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Check emojis in Markdown files
+      uses: your-action-repository/check-emojis-action@v1
